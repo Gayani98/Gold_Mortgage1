@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Services</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<style type="text/css">
+		@media only screen and (max-width: 600px) {
+  body {
+    background-color: lightblue;
+  }
+}
+
+.sertitle{
+  background-color: #111;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 150px;
+}
+.waviys {
+  position: relative;
+}
+.waviys span {
+  position: relative;
+  display: inline-block;
+  font-size: 50px;
+  color: #FFD700;
+  text-transform: uppercase;
+  animation: flip 2s infinite;
+  animation-delay: calc(.1s * var(--i));
+
+}
+@keyframes flip {
+  0%,80% {
+    transform: rotateY(360deg) 
+  }
+}
+
+
+
+
+.serve{
+	width: 100%;
+	height: 400px;
+	background-repeat: no-repeat;
+  
+	background-attachment: fixed;
+	background-image: url('images/blackgold.jpg');
+	background-size: 100% 100%;
+
+	
+}
+
+.serve h3{
+	font-size: 30px;
+	
+	padding: 20px;
+	color: white;
+	position: absolute;
+	
+}
+
+
+
+
+
+
+
+.benefits {
+  text-align: center;
+  font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  grid-column-gap: 10px;
+  grid-row-gap: 15px;
+}
+.benefits h1{
+	font-size: 30px;
+}
+.benefits li{
+	font-size: 20px;
+}
+.gridsidebar {
+  grid-column: 1 / 2;
+  grid-row: 2 / 4;
+  background: #FFDF00;
+  grid-template-area: sidebar;
+  
+}
+.gridsidebar li{
+	text-align: left;
+}
+.gridcontent {
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
+  background: #f5c531;
+  height: 300px;
+  grid-template-area: content;
+}
+
+.gridextra {
+  grid-column: 2 / 3;
+  grid-row: 3 / 4;
+  background: #898989;
+  grid-template-area: extra;
+}
+@media (max-width: 768px){
+  /* For mobile phones: */
+  .container {
+    grid-template-areas: 
+"header header"
+"sidebar sidebar"
+"content content"
+"extra extra"
+"footer footer"
+  }
+    .header, .sidebar, .extra, .content, .footer {
+    grid-column: 1 / 3;
+  }
+ 
+  .content {
+    background: #f5c531;
+  }
+
+}
+
+.gridextra {
+  animation: 2s anim-lineUp ease-out infinite;
+}
+@keyframes anim-lineUp {
+  0% {
+    opacity: 0;
+    transform: translateY(80%);
+  }
+  20% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
+
+
+.explain{
+	width: 100%;
+	height: 400px;
+	background-repeat: no-repeat;
+  background-attachment: fixed;
+	background-image: url('images/gold1.jpg');
+	background-size: 100% ;
+	
+	font-size: 20px;
+}
+.explain h3{
+	padding: 25px;
+}
+
+
+
+
+	</style>
+</head>
+
+<body>
+<div class="nav">
+  <div class="site-identity">
+  	<div class="logo"><img src="images/logo.png"></div>
+  	
+    <h1><a href="#">GLOBAL  ASSESTS</a></h1>
+  </div>  
+  <div class="site-navigation">
+    <ul>
+      <li><a href="home.html" target="_self">Home</a></li> 
+      <li><a href="aboutus.html" target="_self">About Us</a></li> 
+      <li><a href="loans.html" target="_self">Services</a></li> 
+      <li><a href="services.html" target="_self">Leasing & Loans</a></li>
+    </ul>
+  </div>
+</div>
+
+<div class="sertitle">
+<div class="waviys">
+   <span style="--i:1">G</span>
+   <span style="--i:2">o</span>
+   <span style="--i:3">l</span>
+   <span style="--i:4">d</span>
+   <span style="--i:5">   </span>
+
+   <span style="--i:6">M</span>
+   <span style="--i:7">o</span>
+   <span style="--i:8">r</span>
+   <span style="--i:9">t</span>
+   <span style="--i:10">g</span>
+   <span style="--i:11">a</span>
+   <span style="--i:12">g</span>
+   <span style="--i:13">e</span>
+   <span style="--i:14">   </span>
+   
+   <span style="--i:15">S</span>
+   <span style="--i:16">e</span>
+   <span style="--i:17">r</span>
+   <span style="--i:18">v</span>
+   <span style="--i:19">i</span>
+   <span style="--i:20">c</span>
+   <span style="--i:21">e</span>
+  </div>
+ </div>
+
+
+
+
+
+
+ <div class="serve">
+
+	<h3>Gold loans, also known as a ‘loans against gold’, <br>are loans that borrowers can take from lenders after pawning their gold items in lieu of other assets. <br>The loan is provided once the gold is inspected and valued, <br>and the loan amount provided is a certain percentage of the gold’s value. <br><br>Gold loans are very common in Sri Lanka as it is one of the fastest and
+	 most convenient ways for obtaining short-term financial aid.</h3>
+	
+</div>
+
+
+
+<div class="benefits">
+	<div class="gridsidebar">
+		<h1>Benefits</h1>
+		<ul>
+			<li>Highest value for your gold jewellery</li><br>
+			<li>Pawning gold loans for a period</li><br>
+			<li>No stamp duty</li><br>
+			<li>No other charges</li><br>
+			<li>No guarantors</li><br>
+			<li>Monthly payments are not required</li><br>
+			<li>Maximum security</li>
+		</ul>
+	</div>
+  <div class="gridcontent">
+  	<h1>Highlights</h1>
+  	<ul>
+  		<li>Options of obtaining cash(Gold loan pawning) or overdraft</li><br>
+		<li>Low rate of investments</li><br>
+		<li>Maximum privacy</li><br>
+		<li>Minimum documentation</li><br>
+		<li>Ability to make partial payments if desired</li><br>
+  	</ul>
+  </div>
+  <div class="gridextra">
+  	<h1>How does it works??</h1>
+  </div>
+</div>
+
+
+
+<div class="explain">
+	<h3>Obtaining a gold loan follows a different procedure in comparison to other forms of loans. <br>It doesn’t require documentation such as income proof or guarantors and <br>is in fact similar to the process of pawning where you simply hand over your gold items and walk away with a loan.<br>
+
+Equipped with state-of-the-art machinery,<br> the highly experienced staff at GAM is geared to offer the highest quality of service to our customers with the least amount of hassle. <br>All you need is to bring in your gold articles (generally between 18-24 karats) along with any proof of valuation.<br> According to the inspection, we will provide a sanctioned loan amount,<br> and you will obtain cash for the gold.
+<br>
+As per the loan agreement,<br> you will then be required to pay off the loan amount with interest,<br> after which you will be able to get the pledged gold items back.<br> At HNB Finance, special protocols have been placed for all gold transactions and inspections,<br> which are given the utmost security to ensure this precious metal does not incur any damage.</h3>
+</div>
+
+
+
+
+
+
+
+<div class="footer">
+	
+  	 <div class="footcon">
+  	 	<div class="footrow">
+  	 		<div class="footer-col">
+  	 			<h4>company</h4>
+  	 			<ul>
+  	 				<li><a href="#">about us</a></li>
+  	 				<li><a href="#">our services</a></li>
+  	 				<li><a href="#">Loans </a></li>
+  	 				<li><a href="#">Home</a></li>
+  	 			</ul>
+  	 		</div>
+  	 		<div class="footer-col">
+  	 			<h4>Connect with Us</h4>
+  	 			<ul>
+  	 				<li><a href="#">+11 2231015</a></li>
+  	 				<li><a href="#">+76 7755000</a></li>
+  	 				<li><a href="#">globalam@gmail.com</a></li>
+  	 				<li><a href="#">gloloan@yahoo.com</a></li>
+  	 				<li><a href="#">90028</a></li>
+  	 			</ul>
+  	 		</div>
+  	 		<div class="footer-col">
+  	 			<h4>Where</h4>
+  	 			<ul>
+  	 				<li><a href="#">India</a></li>
+  	 				<li><a href="#">Canada</a></li>
+  	 				<li><a href="#">Germany</a></li>
+  	 				<li><a href="#">China</a></li>
+  	 			</ul>
+  	 		</div>
+  	 		
+  	 	</div>
+  	 </div>
+ 
+
+</div>
+
+</body>
+</html>

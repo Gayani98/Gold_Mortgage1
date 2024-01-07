@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Global Assests Management Pvt Ltd</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style type="text/css">
+	.headimg
+{
+	background: url('images/headimage.jpg');
+	text-align: center;
+	width: 100%;
+	height: 500px;
+	background-size: 100% 500px;
+ 	position: relative;
+	
+	
+}
+ .headimg .overlay{
+	width: 100%;
+	height: 500px;
+	
+
+	color: #FFF;
+	text-shadow: 1px 1px 1px #333;
+  
+	
+}
+.overlay h1 {
+	font-family: 'Dancing Script', cursive;
+	font-size: 100px;
+	margin-bottom: 30px;
+}
+
+.overlay h3 {
+	font-family: 'Open Sans', sans-serif;
+	margin-bottom: 40px;
+	color: #fcc200;
+	font-size: 30px;
+}
+.overlay  p {
+	font-family: 'Open Sans', sans-serif;
+	margin-bottom: 10px;
+	color: #f5f5dc;
+	font-size: 20px;
+}
+
+
+.waviy {
+  position: relative;
+  -webkit-box-reflect: below -20px linear-gradient(transparent, rgba(0,0,0,.2));
+  font-size: 60px;
+}
+.waviy span {
+  font-style: bold;
+  font-family: 'Dancing Script', cursive;
+  position: relative;
+  display: inline-block;
+  color: #fff;
+  text-transform: uppercase;
+  animation: waviy 1s infinite;
+  animation-delay: calc(.1s * var(--i));
+  
+}
+@keyframes waviy {
+  0%,40%,100% {
+    transform: translateY(0)
+  }
+  20% {
+    transform: translateY(-20px)
+  }
+}
+
+
+
+
+
+
+.content1{
+	background: url('images/fullbody2.jpg');
+	width: 100%;
+	height: 500px;
+	text-align: center;
+	
+	justify-content: center;
+	
+	background-size: cover;
+	background-attachment: fixed;
+	overflow: hidden;
+}
+.content1 h1{
+	font-family: 'Dancing Script', cursive;
+	font-size: 70px;
+	
+}
+ .content1 h4{
+ 	font-size: 40px;
+ } 
+ .content1 p{
+ 	font-size: 30px;
+
+ }
+.animate-char
+{
+   text-transform: uppercase;
+  background-image: linear-gradient(
+    -225deg,
+    #f0e68c 0%,
+    #fafad2 29%,
+    #ffcc33 67%,
+    #fff800 100%
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 2s linear infinite;
+  display: inline-block;
+      font-size: 190px;
+}
+
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+}
+  
+
+
+
+.lineup {
+  animation: 2s anim-lineUp ease-out infinite;
+
+}
+@keyframes anim-lineUp {
+  0% {
+    opacity: 0;
+    transform: translateY(80%);
+  }
+  20% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
+
+
+
+
+
+
+
+
+.content2{
+	height:400px;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  background: #000000;
+  position:relative;
+}
+.content2 .columndetail{
+	position: absolute;
+	padding: 20px;
+	justify-content: center;
+	text-align: center;
+}
+.columndetail h3{
+	color: white;
+	font-size: 40px;
+
+}
+.content2 .column{
+	position:relative;
+  overflow:hidden;
+  width:70vw;
+  height:300px;
+  display:flex;
+  background:black;
+  box-shadow: 0px 0px 49px 1px rgba(0,0,0,0.75);
+}
+.column img{
+	width:100%;
+  height:300px;
+  left:100%;
+  opacity:1;
+  position:absolute;
+  filter:brightness(50%);
+  animation:mouvement 16s infinite;
+}
+@keyframes mouvement {
+  0%{
+    left:100%;
+    opacity:1 ;
+  }
+   30%{
+    left:0;
+    opacity:1;
+  }
+  60%{
+    left:-100%;
+    opacity:1;
+  }
+  100%{
+    left:100%;
+    opacity:1;
+  }
+}
+
+
+img:nth-child(1){
+  animation-delay:0s;
+}
+img:nth-child(2){
+  animation-delay:4s;
+}
+img:nth-child(3){
+  animation-delay:8s;
+}
+img:nth-child(4){
+  animation-delay:12s;
+}
+img:nth-child(4){
+  animation-delay:16s;
+}
+
+
+</style>
+</head>
+<body>
+
+<!--navigation-->
+<div class="nav">
+  <div class="site-identity">
+  	<div class="logo"><img src="images/logo.png"></div>
+  	
+    <h1><a href="#">GLOBAL  ASSESTS</a></h1>
+  </div>  
+  <div class="site-navigation">
+    <ul>
+      <li><a href="home.html" target="_self">Home</a></li> 
+      <li><a href="aboutus.html" target="_self">About Us</a></li> 
+      <li><a href="loans.html" target="_self">Services</a></li> 
+      <li><a href="services.html" target="_self">Leasing & Loans</a></li>
+    </ul>
+  </div>
+</div>
+
+<!--headimage-->
+<div class="headimg">
+	<div class="overlay">
+<div class="waviy">
+   <span style="--i:1">W</span>
+   <span style="--i:2">E </span>
+   
+   <span style="--i:3"></span>
+   <span style="--i:4">A</span>
+   <span style="--i:5">R</span>
+   
+   <span style="--i:6">E</span>
+   <span style="--i:7"></span>
+   <span style="--i:8">W</span>
+   <span style="--i:9">I</span>
+   
+   <span style="--i:10">T</span>
+   <span style="--i:11">H</span>
+   <span style="--i:12"></span>
+
+   <span style="--i:13">Y</span>
+   <span style="--i:14">O</span>
+   <span style="--i:15">U</span>
+
+  </div>
+
+
+<h3>Start Living Your Dreams</h3>
+<p>If You Can DREAM It, We Can FINANCE It, We offer a variety of products to fit your needs with the experience to answer any questions you may have.</p>
+	<br>
+	</div>
+</div>
+
+
+
+
+	
+	
+<div class="content1">
+	<h1 class="animate-char">HAVING A MORTAGE IS A BIG DEAL.</h1>
+		
+	<h4 class="lineup">Whether you're buying or refinancing, we are here to help...</h4>
+
+	<p>Whether you are refinancing your house or a first time home buyer, we will put you in the right loan with the best possible rate.
+
+Our goal at Global Assests Management Private Limited is to earn your trust and we are confident that our hard work, integrity, and honesty will make this a great experience. We take pride in the opportunity to make your dreams come true!</p>
+</div>
+
+
+
+
+<div class="content2">
+	<div class="column">
+    <img src="images/row1.jpg" alt="Snow" >
+    <img src="images/row2.jpg" alt="Snowe" >
+    <img src="images/row3.jpg" alt="Forest">
+    <img src="images/row4.jpg" alt="Mountains" >
+   </div>
+
+   <div class="columndetail">
+   	<h3>Here at Gold Financial Services,<br><br> we pride ourselves as being your Local Mortgage Lender on being a one-stop shop for<br> you <br> by providing Processing, Underwriting, and Closing all under the same roof.</h3>
+   </div>
+
+   
+</div>
+
+
+
+
+<div class="footer">
+	
+  	 <div class="footcon">
+  	 	<div class="footrow">
+  	 		<div class="footer-col">
+  	 			<h4>company</h4>
+  	 			<ul>
+  	 				<li><a href="#">about us</a></li>
+  	 				<li><a href="#">our services</a></li>
+  	 				<li><a href="#">Loans </a></li>
+  	 				<li><a href="#">Home</a></li>
+  	 			</ul>
+  	 		</div>
+  	 		<div class="footer-col">
+  	 			<h4>Connect with Us</h4>
+  	 			<ul>
+  	 				<li><a href="#">+11 2231015</a></li>
+  	 				<li><a href="#">+76 7755000</a></li>
+  	 				<li><a href="#">globalam@gmail.com</a></li>
+  	 				<li><a href="#">gloloan@yahoo.com</a></li>
+  	 				<li><a href="#">90028</a></li>
+  	 			</ul>
+  	 		</div>
+  	 		<div class="footer-col">
+  	 			<h4>Where</h4>
+  	 			<ul>
+  	 				<li><a href="#">India</a></li>
+  	 				<li><a href="#">Canada</a></li>
+  	 				<li><a href="#">Germany</a></li>
+  	 				<li><a href="#">China</a></li>
+  	 			</ul>
+  	 		</div>
+  	 		
+  	 	</div>
+  	 </div>
+ 
+
+</div>
+
+
+
+
+</body>
+</html>
